@@ -23,7 +23,7 @@
 ## 项目结构
 
 ```
-essay-title-generator/
+essay-title-generator/  # 主要网站文件目录
 ├── index.html        # 网站首页
 ├── about.html        # 关于我们页面
 ├── faq.html          # 常见问题页面
@@ -52,8 +52,19 @@ git clone https://github.com/HuhuPanda/essay-title-generator.site.git
 ## 部署到 GitHub Pages
 
 1. 确保您的仓库已设置为 GitHub Pages
+   - 在仓库设置中，找到 "Pages" 选项
+   - 选择 "GitHub Actions" 作为构建和部署的来源
+
 2. 将代码推送到 GitHub 仓库的 main 分支
-3. GitHub Pages 将自动部署您的网站
+   ```bash
+   git add .
+   git commit -m "更新网站内容"
+   git push
+   ```
+
+3. GitHub Actions 将自动部署您的网站
+   - 部署过程可以在仓库的 "Actions" 选项卡中查看
+   - 部署完成后，您的网站将可以通过 `https://[您的用户名].github.io/essay-title-generator.site` 访问
 
 ## 使用方法
 

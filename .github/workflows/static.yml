@@ -35,8 +35,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # 上传整个仓库
-          path: '.'
+          # 上传 essay-title-generator 目录
+          path: './essay-title-generator'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2 

@@ -2,7 +2,7 @@
   "name": "essay-title-generator",
   "version": "1.0.0",
   "description": "一个帮助学生和研究人员生成专业论文标题的在线工具",
-  "main": "essay-title-generator/index.html",
+  "private": true,
   "keywords": [
     "论文",
     "标题",
