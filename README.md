@@ -17,37 +17,43 @@
 ## 技术栈
 
 - 前端：HTML, CSS, JavaScript
-- 框架：React, Next.js
-- 样式：Tailwind CSS
-- 开发工具：TypeScript, ESLint
+- 响应式设计
+- 多语言支持
 
-## 安装说明
+## 项目结构
+
+```
+essay-title-generator/
+├── index.html        # 网站首页
+├── about.html        # 关于我们页面
+├── faq.html          # 常见问题页面
+├── css/              # 样式文件
+├── js/               # JavaScript 文件
+├── images/           # 图片资源
+└── robots.txt        # 搜索引擎爬虫配置
+```
+
+## 本地运行
+
+由于这是一个纯静态网站，您可以通过以下方式在本地运行：
 
 1. 克隆仓库
 ```bash
 git clone https://github.com/HuhuPanda/essay-title-generator.site.git
-cd essay-title-generator
 ```
 
-2. 安装依赖
-```bash
-npm install
-```
+2. 直接在浏览器中打开 `essay-title-generator/index.html` 文件
 
-3. 启动开发服务器
-```bash
-npm run dev
-```
+或者使用任何静态文件服务器，例如：
+- Python 的 HTTP 服务器：`python -m http.server`
+- VS Code 的 Live Server 扩展
+- 任何其他 Web 服务器（Apache, Nginx 等）
 
-4. 构建生产版本
-```bash
-npm run build
-```
+## 部署到 GitHub Pages
 
-5. 启动生产服务器
-```bash
-npm run start
-```
+1. 确保您的仓库已设置为 GitHub Pages
+2. 将代码推送到 GitHub 仓库的 main 分支
+3. GitHub Pages 将自动部署您的网站
 
 ## 使用方法
 

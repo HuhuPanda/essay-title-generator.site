@@ -2,13 +2,7 @@
   "name": "essay-title-generator",
   "version": "1.0.0",
   "description": "一个帮助学生和研究人员生成专业论文标题的在线工具",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "main": "essay-title-generator/index.html",
   "keywords": [
     "论文",
     "标题",
@@ -20,21 +14,5 @@
     "generator"
   ],
   "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "next": "^13.4.19",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
-    "tailwindcss": "^3.3.3",
-    "postcss": "^8.4.28",
-    "autoprefixer": "^10.4.15"
-  },
-  "devDependencies": {
-    "@types/node": "^20.5.7",
-    "@types/react": "^18.2.21",
-    "typescript": "^5.2.2",
-    "eslint": "^8.48.0",
-    "eslint-config-next": "^13.4.19"
-  }
+  "license": "MIT"
 } 
