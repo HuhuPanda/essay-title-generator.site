@@ -34,32 +34,18 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Copy files to root directory
         run: |
-          cp -r essay-title-generator/* .
-          # 确保不会覆盖重要的根目录文件
-          if [ -f essay-title-generator/index.html ]; then
-            cp essay-title-generator/index.html .
-          fi
-          if [ -f essay-title-generator/about.html ]; then
-            cp essay-title-generator/about.html .
-          fi
-          if [ -f essay-title-generator/faq.html ]; then
-            cp essay-title-generator/faq.html .
-          fi
-          # 复制资源目录
-          if [ -d essay-title-generator/css ]; then
-            cp -r essay-title-generator/css .
-          fi
-          if [ -d essay-title-generator/js ]; then
-            cp -r essay-title-generator/js .
-          fi
-          if [ -d essay-title-generator/images ]; then
-            cp -r essay-title-generator/images .
-          fi
+          # 确保目标目录存在
+          mkdir -p public
+          # 复制所有文件到 public 目录
+          cp -r essay-title-generator/* public/
+          # 复制根目录的重要文件到 public 目录
+          cp 404.html public/ || true
+          cp .nojekyll public/ || true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          # 上传整个仓库
-          path: '.'
+          # 上传 public 目录
+          path: './public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2 
