@@ -74,6 +74,17 @@ git clone https://github.com/HuhuPanda/essay-title-generator.site.git
 4. 点击"生成标题"按钮
 5. 从生成的标题列表中选择最适合您的标题
 
+## 自定义配置
+
+### 百度统计
+
+网站已集成百度统计代码，但需要替换为您自己的百度统计 ID：
+
+1. 在百度统计官网注册并获取您的统计 ID
+2. 打开 `essay-title-generator/index.html` 文件
+3. 找到百度统计代码部分（已被注释）
+4. 取消注释并将 `您的百度统计ID` 替换为您的实际 ID
+
 ## 贡献指南
 
 欢迎对本项目做出贡献！如果您有任何建议或发现了问题，请提交 issue 或 pull request。
