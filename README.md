@@ -76,14 +76,14 @@ git clone https://github.com/HuhuPanda/essay-title-generator.site.git
 
 ## 自定义配置
 
-### 百度统计
+### Google Analytics
 
-网站已集成百度统计代码，但需要替换为您自己的百度统计 ID：
+网站已集成 Google Analytics 代码，但需要替换为您自己的 Google Analytics ID：
 
-1. 在百度统计官网注册并获取您的统计 ID
+1. 在 Google Analytics（分析）官网创建账户并获取您的跟踪 ID（通常以 "G-" 开头）
 2. 打开 `essay-title-generator/index.html` 文件
-3. 找到百度统计代码部分（已被注释）
-4. 取消注释并将 `您的百度统计ID` 替换为您的实际 ID
+3. 找到 Google Analytics 代码部分（已被注释）
+4. 取消注释并将 `G-XXXXXXXXXX` 替换为您的实际 Google Analytics ID
 
 ## 贡献指南
 
