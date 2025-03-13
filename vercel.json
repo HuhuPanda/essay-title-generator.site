@@ -1,12 +1,7 @@
 {
   "version": 2,
-  "buildCommand": null,
-  "outputDirectory": "essay-title-generator",
   "framework": null,
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/essay-title-generator/$1" }
-  ],
-  "redirects": [
-    { "source": "/", "destination": "/essay-title-generator/index.html", "permanent": true }
-  ]
+  "buildCommand": false,
+  "devCommand": false,
+  "outputDirectory": "."
 } 
