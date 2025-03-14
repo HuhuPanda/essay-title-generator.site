@@ -3,6 +3,7 @@
   "framework": null,
   "outputDirectory": "public",
   "routes": [
+    { "src": "/google8f5d5fcf6a261030.html", "dest": "/google8f5d5fcf6a261030.html" },
     { "src": "/", "dest": "/essay-title-generator/index.html" },
     { "src": "/about", "dest": "/essay-title-generator/about.html" },
     { "src": "/faq", "dest": "/essay-title-generator/faq.html" },
