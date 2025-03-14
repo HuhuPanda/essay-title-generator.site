@@ -1,6 +1,7 @@
 {
   "version": 2,
   "framework": null,
+  "outputDirectory": "public",
   "routes": [
     { "src": "/", "dest": "/essay-title-generator/index.html" },
     { "src": "/about", "dest": "/essay-title-generator/about.html" },
