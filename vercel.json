@@ -1,7 +1,11 @@
 {
   "version": 2,
   "framework": null,
-  "buildCommand": false,
-  "devCommand": false,
-  "outputDirectory": "."
+  "routes": [
+    { "src": "/", "dest": "/essay-title-generator/index.html" },
+    { "src": "/about", "dest": "/essay-title-generator/about.html" },
+    { "src": "/faq", "dest": "/essay-title-generator/faq.html" },
+    { "src": "/essay-title-generator/(.*)", "dest": "/essay-title-generator/$1" },
+    { "src": "/(.*)", "dest": "/essay-title-generator/$1" }
+  ]
 } 
