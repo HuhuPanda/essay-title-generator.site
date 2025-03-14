@@ -32,19 +32,39 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Create index.html in root
+      - name: Copy files to root and create directory structure
         run: |
-          # 复制 essay-title-generator/index.html 到根目录
-          cp essay-title-generator/index.html index.html
-          # 复制其他重要文件到根目录
-          cp essay-title-generator/about.html . || true
-          cp essay-title-generator/faq.html . || true
-          # 复制资源目录
-          cp -r essay-title-generator/css . || true
-          cp -r essay-title-generator/js . || true
-          cp -r essay-title-generator/images . || true
+          # 创建必要的目录结构
+          mkdir -p essay-title-generator
+          
+          # 复制 essay-title-generator 目录中的所有文件到根目录
+          cp -r essay-title-generator/* .
+          
+          # 同时保留 essay-title-generator 目录结构
+          cp -r essay-title-generator/* essay-title-generator/ || true
+          
+          # 确保所有必要的文件都存在于根目录
+          ls -la
+          
           # 确保 .nojekyll 文件存在
           touch .nojekyll
+          
+          # 创建一个简单的重定向页面，从根目录重定向到 essay-title-generator/index.html
+          cat > redirect.html << 'EOL'
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta http-equiv="refresh" content="0; url=essay-title-generator/index.html">
+            <title>重定向到论文标题生成器</title>
+          </head>
+          <body>
+            <p>如果您没有被自动重定向，请<a href="essay-title-generator/index.html">点击这里</a>。</p>
+          </body>
+          </html>
+          EOL
+          
+          # 将重定向页面复制为根目录的 index.html
+          cp redirect.html index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
