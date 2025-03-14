@@ -1,0 +1,93 @@
+/* 移动端优化样式 */
+@media (max-width: 768px) {
+  /* 导航栏优化 */
+  header .container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .logo {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 32px;
+    width: auto;
+  }
+  
+  nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+  nav ul li {
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+  
+  nav ul li a {
+    font-size: 14px;
+    padding: 3px 0;
+  }
+  
+  .language-selector-container {
+    flex: 0 0 auto;
+    margin-left: 10px;
+  }
+  
+  .language-selector-container select {
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+  
+  /* 其他移动端优化 */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+  
+  .generator-card {
+    padding: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group select {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+/* 超小屏幕优化 */
+@media (max-width: 480px) {
+  nav ul li {
+    margin-left: 5px;
+  }
+  
+  nav ul li a {
+    font-size: 12px;
+  }
+  
+  .language-selector-container select {
+    width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+} 
